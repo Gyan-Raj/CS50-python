@@ -1,4 +1,4 @@
-name = input("Enter your name ")
+name = input("Enter your full name ")
 age = input("Enter your age ")
 print("Hi " + name)
 print("Hi", name)
@@ -12,3 +12,6 @@ print("World")
 
 company_name = input("Enter your company name ").strip().title()
 print(f"{name} works in {company_name}")
+
+first_name, last_name = name.strip().title().split()
+print(f"That's all in this lecture {first_name}")
