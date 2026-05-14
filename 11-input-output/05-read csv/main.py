@@ -89,12 +89,12 @@ for member in members:
 # For the code above, we will get ValueError (ValueError: too many values to unpack (expected 2, got 3))
 """
 This happened because in the file, we have 2 commas, thus causing 3 entries. So, we now have to create entries something as:
-    Gyan|Bangalore, Karnataka
-    Ritu|Balurghat, West Bengal
-    Akshay|Bangalore, Karnataka
-    Rajesh|Patna, Bihar
-    Gayatri|Patna, Bihar
-    Pratyaksha|Balurghat, West Bengal
-and then have to split based on "|", but this will again cause problem if we have multiple "|".
-So, to overcome this, we have a "csv" package which comes with python by default
+    Gyan,"Bangalore, Karnataka"
+    Ritu,"Balurghat, West Bengal"
+    Akshay,"Bangalore, Karnataka"
+    Rajesh,"Patna, Bihar"
+    Gayatri,"Patna, Bihar"
+    Pratyaksha,"Balurghat, West Bengal"
+But, now we have to split it based on comma (,) which is not inside quptes ("")
+So, to overcome this hectic logic and read csv file properly, we have a "csv" package which comes with python by default
 """
