@@ -12,3 +12,4 @@ test_greet.py ....                                                              
 
 
 as we now have __init__.py, pytest will look into files of that folder (05-pytest-a better way) and will then start executing all the tests it can see inside that folder
+Just run "pytest" in the terminal
