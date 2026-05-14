@@ -40,3 +40,5 @@ Now, to use "pytest":
         ============================================================ 1 failed in 0.21s =============================================================
 """
 # The error above is self explanatory
+
+# A better way will be to create a __init__.py file (even an empty __init__.py is OK) which will run all the tests in a folder (05-pytest-a better way)
