@@ -22,4 +22,8 @@ if __name__ == "__main__":
 
 # This is fine, but again we have reached to the first case where we were writing test in "if" statements. So, this will also again have too many lines of codes for multiple edge case testing
 
-# So, we use "pytest" library for testing (04-pytest)
+"""
+So, we use "pytest" library for testing (04-pytest) where we need to:
+  - install pytest : pip install pytest
+  - run the file by "pytest file_name.py"
+"""
