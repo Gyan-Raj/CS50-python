@@ -63,3 +63,38 @@ for member in sorted(members, key=lambda s: s["name"]):
 print("\n---------------------Sorting using lambda (for age)---------------------: ")
 for member in sorted(members, key=lambda s: s["age"]):
     print(f"{member["name"]} is {member["age"]} years old")
+
+
+print("\n---------------------Printing multiple comma separated values---------------------: ")
+"""
+# Create another file named names2.csv with entries like:
+    Gyan,Bangalore, Karnataka
+    Ritu,Balurghat, West Bengal
+    Akshay,Bangalore, Karnataka
+    Rajesh,Patna, Bihar
+    Gayatri,Patna, Bihar
+    Pratyaksha,Balurghat, West Bengal
+Here, Gyan is name and Bangalore, Karnataks is the address
+"""
+
+members = []
+with open("names2.csv") as file:
+    for line in file:
+        name, address = line.rstrip().split(",")
+        members.append({"name": name, "address": address})
+
+for member in members:
+    print(f"{member["name"]} lives in {member["address"]}")
+
+# For the code above, we will get ValueError (ValueError: too many values to unpack (expected 2, got 3))
+"""
+This happened because in the file, we have 2 commas, thus causing 3 entries. So, we now have to create entries something as:
+    Gyan|Bangalore, Karnataka
+    Ritu|Balurghat, West Bengal
+    Akshay|Bangalore, Karnataka
+    Rajesh|Patna, Bihar
+    Gayatri|Patna, Bihar
+    Pratyaksha|Balurghat, West Bengal
+and then have to split based on "|", but this will again cause problem if we have multiple "|".
+So, to overcome this, we have a "csv" package which comes with python by default
+"""
