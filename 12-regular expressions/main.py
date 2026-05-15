@@ -16,13 +16,13 @@ name=f"{first} {last}"
 """
 
 
-# name = input("Enter your name: ").strip()
-# if "," in name:
-#     # If we enter name as "Raj,Gyan", it will give us ValueError (ValueError: not enough values to unpack (expected 2, got 1))
-#     last, first = name.split(", ")
-#     name = f"{first} {last}"
+name = input("Enter your name: ").strip()
+if "," in name:
+    # If we enter name as "Raj,Gyan", it will give us ValueError (ValueError: not enough values to unpack (expected 2, got 1))
+    last, first = name.split(", ")
+    name = f"{first} {last}"
 
-# print(f"Hello {name}")
+print(f"Hello {name}")
 
 """
 # So, in above example we see that we are having issue for the whitespace which means that we need to cater for comma and an optional whitespace after it
