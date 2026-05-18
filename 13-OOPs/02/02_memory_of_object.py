@@ -12,7 +12,7 @@ def main():
     user = get_user()
     print(user)  # <__main__.User object at 0x0000024B998486E0>
     # 0x0000024B998486E0 shows the address of the object created in memory (This will change everytime we run the script)
-    # To override this behaviour, pyhton exposes another method "__str__" (02_(__str__).py)
+    # To override this behaviour, pyhton exposes another method "__str__" (03_(__str__).py)
     if user.first_name.lower() == "gyan":
         user.last_name = "Raj"
     print(f"Hi, {user.first_name} {user.last_name}")
