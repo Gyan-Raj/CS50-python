@@ -28,6 +28,6 @@ members = [
 
 
 kannadigas = [member["name"]
-              for member in members if member["place"] == "Karnataka"]
+              for member in members if member["place"].lower() == "karnataka"]
 
 print("Living in karnataka:", kannadigas)
