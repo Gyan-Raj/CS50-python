@@ -15,3 +15,5 @@ When we run "mypy 01_type_hints.py", it will show this output:
 C:\Users\bhard\Desktop\learning\CS50-python\14-et cetera\06_type_hints> mypy .\01_type_hints.py
 Success: no issues found in 1 source file
 """
+
+# NOTE: the default return type of a function is "None"
